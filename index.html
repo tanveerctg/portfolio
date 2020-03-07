@@ -8,6 +8,12 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <div class="loaderWrapper">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <header class="header grid">
       <div class="hero">
         <div class="hero__pic">
@@ -343,6 +349,12 @@
       });
     </script>
     <script>
+      const loaderWrapper = document.querySelector(".loaderWrapper");
+      const ldsRipple = document.querySelector(".lds-ripple");
+      window.addEventListener("load", event => {
+        loaderWrapper.style.display = "none";
+        ldsRipple.style.display = "none";
+      });
       const designation = document.querySelector(".designation");
       const designations = [
         "<span >Front-End Dev</span>",
