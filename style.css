@@ -82,10 +82,12 @@ button {
 
 /* HEADER */
 .pic {
-    width: 22rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     -o-object-fit: cover;
     object-fit: cover;
+    object-position: center;
 }
 
 .grid {
@@ -591,9 +593,9 @@ button {
     top: -27px;
     right: -10px;
     color: white;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    -webkit-transition: all 3s ease-in;
+    -o-transition: all 3s ease-in;
+    transition: all 3s ease-in;
     font-weight: 600;
 }
 
@@ -728,7 +730,6 @@ button {
 }
 
 .socialProfiles {
-
     font-size: 1.6rem;
     color: var(--tertiaryColor);
     width: 1135px;
@@ -744,12 +745,23 @@ button {
 
 }
 
-.socialIcon {
-    width: 3rem;
+
+.iconContainer>.socialIcon {
+    width: 100%;
 }
 
-.socialIcon:first-child {
-    margin-right: .5rem;
+.socialIcon {
+    width: 2.5rem;
+    background-size: cover;
+}
+
+.github {
+
+    padding: .03px;
+}
+
+.socialIcon:last-child {
+    margin: 0 .3rem;
 }
 
 footer p {
