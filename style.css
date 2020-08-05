@@ -630,7 +630,9 @@ button {
 .firebaseLogo {
     bottom: 5px;
 }
-
+.vueLogo{
+	bottom: 2px;
+}
 .projectsContainer {
     grid-gap: 1rem;
 }

@@ -24,7 +24,7 @@
             Hi, My Name is <span class="name">tanveer</span>
           </h1>
           <h2 class="hero__text__secondary">
-            i Am a <span class="designation"></span>
+            I am a <span class="designation"></span>
           </h2>
           <div class="hero__text__button">
             <button class="portfolioBtn">
@@ -120,6 +120,15 @@
             <div class="skillInfo">
               <p class="skillName">React Js</p>
               <img src="images/react.svg" class="techLogo" />
+            </div>
+            <span class="digit" data-digit="90">90%</span>
+          </div>
+        </div>
+        <div class="progressbar">
+          <div class="progressbar_fill">
+            <div class="skillInfo">
+              <p class="skillName ">Vue Js</p>
+              <img src="images/vue.svg" class="techLogo vueLogo" />
             </div>
             <span class="digit" data-digit="90">90%</span>
           </div>
@@ -362,9 +371,9 @@
       });
       const designation = document.querySelector(".designation");
       const designations = [
-        "<span >Front-End Dev</span>",
         "<span >Javascript Lover</span>",
-        "<span >React Js Dev</span>"
+        "<span >React Js Dev</span>",
+        "<span >Vue Js Dev</span>"
       ];
       designation.innerHTML = designations[0];
       setTimeout(() => {
